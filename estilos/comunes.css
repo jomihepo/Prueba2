@@ -1,0 +1,39 @@
+/*
+ * 15/04/2010 
+ * COMIENZO RESET PAGINAS Y REGLAS GENERALES FRAMEWORK CSS:
+ * -sin bordes
+ * -sin margenes ni paddings
+ * -sin fondos ni estilo para listas
+*/
+
+* {margin: 0; padding: 0; font: 11px Tahoma;}
+q:before,q:after {content: "";}
+sup {font-size: 0.8em;}
+sub {font-size: 0.8em;}
+ul {list-style-type: none;}
+a {border: none; text-decoration: none; color: #52006e;}
+a:link, a:visited, a:active {outline: none;}
+a:hover {text-decoration: underline;}
+img {border: none; text-decoration: none;} 
+acronym {border: 0;}
+
+/* igualar las fuentes a todos los elementos */
+h1, h2, h3, h4, h5, strong {font-size: 100%; font-weight: bold;}
+
+/* tablas */
+table {width: 100%; border-collapse: collapse; border-spacing: 0;}
+
+/* propociona altura a divs sin altura con contenido flotado */
+/* http://www.positioniseverything.net/easyclearing.html */
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+
+.b {border: 1px solid Yellow;} /*clase de uso rápido para destacar los bordes de un bloque*/
+
+/* FIN RESET PAGINAS Y REGLAS GENERALES FRAMEWORK CSS */
+
+/**********************************************
+				ESTRUCTURA DE LA PAGINA
+***********************************************/
